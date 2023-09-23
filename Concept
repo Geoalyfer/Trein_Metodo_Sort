@@ -1,0 +1,11 @@
+#- Utilizado para ordenar elementos
+#- Modifica o objeto original
+#- Possui um parâmetro chamado `key`
+
+pessoas = [('Vinicius',40),  ('Maria',23),  ('Ana',64),  ('Gabriel',17),  ('Lucas', 13)]
+print(pessoas)
+[('Vinicius', 40), ('Maria', 23), ('Ana', 64), ('Gabriel', 17), ('Lucas', 13)]
+
+pessoas.sort(key = lambda nome: nome[1], reverse=True)
+pessoas
+[('Ana', 64), ('Vinicius', 40), ('Maria', 23), ('Gabriel', 17), ('Lucas', 13)]
